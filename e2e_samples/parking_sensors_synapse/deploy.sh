@@ -34,7 +34,6 @@ export SYNAPSE_SQL_PASSWORD='Jones@001'
 export PROJECT
 export ENV_NAME
 export GITHUB_REPO_URL='https://github.com/jonesjebarajgit/DataOps'
-export SYNAPSE_WORKSPACE_NAME='synapsews'
 
 . ./scripts/common.sh
 . ./scripts/verify_prerequisites.sh
