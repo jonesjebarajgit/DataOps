@@ -21,6 +21,9 @@ set -o pipefail
 set -o nounset
 # set -o xtrace # For debugging
 
+echo "Testing testing testing"
+echo "Testing $GITHUB_REPO"
+
 . ./scripts/common.sh
 . ./scripts/verify_prerequisites.sh
 . ./scripts/init_environment.sh

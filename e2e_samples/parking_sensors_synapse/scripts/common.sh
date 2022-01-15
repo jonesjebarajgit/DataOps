@@ -102,3 +102,5 @@ assign_synapse_role_if_not_exists() {
         echo "$syn_role_name role exists for $sp_name_or_obj_id"
     fi
 }
+echo "Testing Testing Testing Testing"
+echo "Testing the script $GITHUB_REPO"
