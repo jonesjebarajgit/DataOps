@@ -33,13 +33,13 @@ export AZDO_PIPELINES_BRANCH_NAME='main'
 export SYNAPSE_SQL_PASSWORD='Jones@001'
 export PROJECT
 export ENV_NAME
-export GITHUB_REPO_URL
+export GITHUB_REPO_URL='https://github.com/jonesjebarajgit/DataOps'
 
 . ./scripts/common.sh
 . ./scripts/verify_prerequisites.sh
 . ./scripts/init_environment.sh
 
-project=mdwdops # CONSTANT - this is prefixes to all resources of the Parking Sensor sample
+project=tarzan # CONSTANT - this is prefixes to all resources of the Parking Sensor sample
 github_repo_url="https://github.com/$GITHUB_REPO"
 
 
