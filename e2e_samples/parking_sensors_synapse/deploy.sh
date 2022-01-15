@@ -37,7 +37,7 @@ export GITHUB_REPO_URL='https://github.com/jonesjebarajgit/DataOps'
 
 . ./scripts/common.sh
 . ./scripts/verify_prerequisites.sh
-. ./scripts/init_environment.sh
+#. ./scripts/init_environment.sh
 
 project=tarzan # CONSTANT - this is prefixes to all resources of the Parking Sensor sample
 github_repo_url="https://github.com/$GITHUB_REPO"
