@@ -110,6 +110,9 @@ azure_storage_key=$(az storage account keys list \
     --output json |
     jq -r '.[0].value')
 
+echo "azure_storage_account:$azure_storage_account"
+echo "azure_storage_key:$azure_storage_key"
+
 # Add file system storage account
 storage_file_system=datalake
 echo "Creating ADLS Gen2 File system: $storage_file_system"
