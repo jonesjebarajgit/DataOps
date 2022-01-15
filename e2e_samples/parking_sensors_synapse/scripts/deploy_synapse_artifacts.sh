@@ -44,8 +44,8 @@ set -o nounset
 
 # Consts
 apiVersion="2020-12-01&force=true"
-dataPlaneApiVersion="2019-06-01-preview"
-synapseResource="https://dev.azuresynapse.net"
+dataPlaneApiVersion="2019-11-01-preview"
+synapseResource="https://ms.web.azuresynapse.net/"
 
 baseUrl="https://management.azure.com/subscriptions/${AZURE_SUBSCRIPTION_ID}"
 synapseWorkspaceBaseUrl="$baseUrl/resourceGroups/${RESOURCE_GROUP_NAME}/providers/Microsoft.Synapse/workspaces/${SYNAPSE_WORKSPACE_NAME}"
