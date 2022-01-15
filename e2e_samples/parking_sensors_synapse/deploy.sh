@@ -21,13 +21,23 @@ set -o pipefail
 set -o nounset
 # set -o xtrace # For debugging
 
-echo "Testing testing testing"
-echo "Testing $GITHUB_REPO"
+# Environment Variables Declaration
+export AZDO_PROJECT='DataOps'
+export AZDO_ORGANIZATION_URL='https://dev.azure.com/tarzandw/'
+export GITHUB_REPO='jonesjebarajgit/DataOps'
+export GITHUB_PAT_TOKEN='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'
+export AZURE_LOCATION='westus'
+export AZURE_SUBSCRIPTION_ID='a2904be6-e61c-4f05-95f1-896110ab4920'
+export DEPLOYMENT_ID='tarzan'
+export AZDO_PIPELINES_BRANCH_NAME='main'
+export SYNAPSE_SQL_PASSWORD='Jones@001'
+export PROJECT
+export ENV_NAME
+export GITHUB_REPO_URL
 
 . ./scripts/common.sh
 . ./scripts/verify_prerequisites.sh
 . ./scripts/init_environment.sh
-
 
 project=mdwdops # CONSTANT - this is prefixes to all resources of the Parking Sensor sample
 github_repo_url="https://github.com/$GITHUB_REPO"
