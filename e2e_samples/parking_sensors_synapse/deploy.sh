@@ -28,7 +28,7 @@ export GITHUB_REPO='jonesjebarajgit/DataOps'
 export GITHUB_PAT_TOKEN='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'
 export AZURE_LOCATION='westus'
 export AZURE_SUBSCRIPTION_ID='a2904be6-e61c-4f05-95f1-896110ab4920'
-export DEPLOYMENT_ID='tarzan'
+export DEPLOYMENT_ID='DwOps'
 export AZDO_PIPELINES_BRANCH_NAME='main'
 export SYNAPSE_SQL_PASSWORD='Jones@001'
 export PROJECT
