@@ -220,12 +220,14 @@ AZURE_STORAGE_ACCOUNT=$azure_storage_account \
 
 # SERVICE PRINCIPAL IN SYNAPSE INTEGRATION TESTS
 # Synapse SP for integration tests 
+ 
  echo "/subscriptions/$AZURE_SUBSCRIPTION_ID/resourceGroups/$resource_group_name/providers/Microsoft.Synapse/workspaces/$synapseworkspace_name"
 
  sp_synapse_name="${PROJECT}-syn-${ENV_NAME}-${DEPLOYMENT_ID}-sp"
+ 
  echo "sp_synapse_name=$sp_synapse_name"
  
- sp_synapse_out=$(az ad sp create-for-rbac \
+ sp_synapse_out=$(MSYS_NO_PATHCONV=1 az ad sp create-for-rbac \
      --skip-assignment \
      --scopes "/subscriptions/$AZURE_SUBSCRIPTION_ID/resourceGroups/$resource_group_name/providers/Microsoft.Synapse/workspaces/$synapseworkspace_name" \
      --name "$sp_synapse_name" \
